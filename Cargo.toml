@@ -1,0 +1,16 @@
+[package]
+name = "raja-btapi-shim"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = [ "cdylib" ]
+
+[dependencies]
+slotmap = "1"
+thread-priority = "1"
+libc = "0.2"
+robusta_jni = "0.2"
+
+[build-dependencies]
+bindgen = "0.70"
